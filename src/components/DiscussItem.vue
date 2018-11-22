@@ -80,20 +80,20 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
-    background-color: rgb(246, 246, 239);
+    background-color: $backgroundColor;
     padding: 50px;   
     border: solid;
     border-width: 2px;
-    border-color: #e25a00;
+    border-color: $primaryColor;
     margin-top: 15px;
 }
 
 .titleItem {
     font-size: 22px;
     font-weight: 700;
-    color: #e25a00;
+    color: $primaryColor;
 }
 
 .subtitleItem {
@@ -114,31 +114,16 @@ export default {
     margin-left: 5px;
 }
 
-textarea {
-    width: 100%;
+textarea {    
     margin: 20px;
-    border-radius: 20px;
-    resize: none;
-    padding: 22px;
 }
 
 button {
-    position: relative;
-    top: -5px;
-    left: 20px;
-    color: #e25a00;
-    font-weight: 700;
-    background-color: #cecece;
-    margin-right: 5px;
+    @extend %myBtn;
 }
 
 .closeBtn {
     margin-left: 10px;
-}
-
-a {
-    color:  #e25a00;
-    opacity: 1;
 }
 </style>
 

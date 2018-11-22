@@ -38,16 +38,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .nav-item.active a{
-    color: #e25a00 !important;
+    color: $primaryColor !important;
     font-weight: 700;
 }
 
 .navbar {
     border-bottom: solid;
     border-width: 2px;
-    border-color: #e25a00;
+    border-color: $primaryColor ;
 }
 
 .nav-item {

@@ -23,16 +23,17 @@ export default {
         }
     },
     methods: {
-        updateList: function()  {
-            this.ids = this.dowloadIds(this.typeList).then( (data) => {this.ids = data.slice(0,30)});            
+        updateList: async function()  {
+            this.ids = (await this.dowloadIds(this.typeList)).slice(0,30);            
         }
     },
     created: function() {
-        this.updateList()
+        this.updateList();
     },
     watch: {
         typeList: function() { 
-            this.updateList()
+            this.ids = [];
+            this.updateList();
         }
     }
 }

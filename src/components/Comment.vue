@@ -69,13 +69,13 @@ export default {
         if(this.comment && this.comment.kids && this.comment.kids.length) {
                 for (let kid of this.comment.kids) {                
                     this.subComments.push(await this.getIdData(kid))
-        };        
+        }      
       }
     }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .subCommentsBox {
     margin-left: 5%;
 }
@@ -101,21 +101,8 @@ export default {
     color: #757575;
 }
 
-textarea {
-    width: 100%;
-    border-radius: 20px;
-    resize: none;
-    padding: 22px;
-}
-
 button {
-    position: relative;
-    top: -5px;
-    left: 20px;
-    margin-right: 5px;
-    color: #e25a00;
-    font-weight: 700;
-    background-color: #cecece;
+    @extend %myBtn;
 }
 
 .replyTextArea {

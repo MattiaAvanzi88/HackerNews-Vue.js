@@ -1,0 +1,43 @@
+$primaryColor: #e25a00;
+$secondaryColor: #cecece;
+$backgroundColor: rgb(246, 246, 239);
+
+
+
+a {
+    color:  $primaryColor;
+    opacity: 1;
+}
+
+
+button {
+    color: $primaryColor;
+    font-weight: 700;
+    background-color: $backgroundColor;
+    margin-right: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: $secondaryColor;
+    }
+    a:hover {
+        text-decoration: none;
+        color: $primaryColor
+    }
+}
+
+%myBtn {
+    position: relative;
+    top: -5px;
+    left: 20px;
+    background-color: $secondaryColor;
+    &:hover {
+        background-color: $secondaryColor;
+    }
+}
+
+textarea {
+    width: 100%;
+    border-radius: 20px;
+    resize: none;
+    padding: 22px;
+}

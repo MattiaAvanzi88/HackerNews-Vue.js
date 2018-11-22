@@ -14,7 +14,8 @@ export const getIdsData =  {
     methods:{
         dowloadIds: async function(type) {
             return fetch('https://hacker-news.firebaseio.com/v0/'+type+'stories.json')
-                    .then( resp => resp.json());      
+                    .then( resp => resp.json())
+                        
         }
     }    
 }

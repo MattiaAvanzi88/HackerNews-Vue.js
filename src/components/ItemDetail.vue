@@ -48,17 +48,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
 .card {    
     margin-bottom: 15px;
-    border-color: #e25a00;
+    border-color: $primaryColor;
 }
 
 .card-header {    
-    background-color: rgb(246, 246, 239);
-    color: #e25a00;
+    background-color: $backgroundColor;
+    color: $primaryColor;
     font-weight: 700;
-    border-color: #e25a00;
+    border-color: $primaryColor;
 }
 
 .card-text {
@@ -66,18 +67,13 @@ export default {
     font-size: 14px;
 }
 
-.close, a, a:hover {
-    color:  #e25a00;
+.close {
+    color:  $primaryColor;
     opacity: 1;
     text-decoration: none;
-}
-
-.myBtn {
-    color: #e25a00;
-    font-weight: 700;
-    background-color: rgb(246, 246, 239);
-    margin-right: 5px;
-    
+    &:hover {
+        background-color: transparent;
+    }
 }
 </style>
 
